@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+h2, .slogan h2, .slogan h1, .exterior h1, .interior h1 {
+  font-family: "Inter";
+  color: #252a34;
+}
+
+.slogan .p-1, .exterior p, .interior p {
+  color: #37393c;
+  font-size: 17px;
+}
+
+.explore, .slogan button, .exterior button, .interior button {
+  padding: 17px 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.exterior, .interior {
+  height: 55vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.exterior h1, .interior h1 {
+  color: white;
+  padding: 0;
+}
+.exterior p, .interior p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  max-width: 500px;
+  color: white;
+}
+.exterior button, .interior button {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: background-color 0.4s;
+  color: white;
+  padding: 15px 40px;
+}
+.exterior button:hover, .interior button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.4s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaeaea;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+}
+header img {
+  width: 100px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: #252a34;
+}
+header nav a:hover {
+  color: crimson;
+  transition: all 0.5s;
+}
+header .nav-left a {
+  border-right: 1px solid black;
+  padding: 0 20px;
+}
+header .nav-left a:last-child {
+  border: none;
+}
+header .nav-right {
+  gap: 20px;
+  font-size: 15px;
+}
+@media (max-width: 800px) {
+  header .nav-right {
+    display: none;
+  }
+}
+header .openner {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: -125px;
+  background-color: rgb(220, 220, 220);
+  box-shadow: 2px 2px 10px;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 5px;
+}
+header .openner a {
+  text-decoration: none;
+  color: black;
+}
+header .menu {
+  width: 40px;
+  display: none;
+}
+@media (max-width: 800px) {
+  header .menu {
+    display: block;
+  }
+}
+header .menu:hover + .openner {
+  display: flex;
+}
+
+/* greetings start */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  background: linear-gradient(rgb(215, 215, 215) 40%, #eaeaea 40%);
+}
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+  }
+}
+@media (max-width: 800px) and (max-width: 1400px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .slogan {
+    gap: 20px;
+  }
+}
+.slogan h1 {
+  text-align: center;
+  font-size: 40px;
+}
+@media (max-width: 800px) {
+  .slogan h1 {
+    text-align: center;
+  }
+}
+.slogan .p-1 {
+  position: absolute;
+  top: 120px;
+  text-align: center;
+}
+.slogan img {
+  width: 200px;
+}
+.slogan h2 {
+  margin-top: 40px;
+  font-size: 30px;
+}
+.slogan .p-2 {
+  text-align: center;
+  margin-top: 30px;
+}
+.slogan button {
+  background-color: red;
+  margin-top: 42px;
+}
+.slogan button:hover {
+  background-color: rgb(168, 16, 46);
+  transition: all 0.4s;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.images-banner {
+  width: 700px;
+}
+@media (max-width: 800px) and (max-width: 1400px) {
+  .images-banner {
+    max-width: 500px;
+  }
+}
+.images-track {
+  margin-top: 40px;
+  width: 400px;
+}
+.images p {
+  max-width: 500px;
+  text-align: center;
+  margin-top: 42px;
+}
+
+/* greetings end */
+/* interior start */
+.interior {
+  margin-top: 40px;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), black), url(images/interior.jpg);
+}
+
+/* interior end */
+/* cars area start */
+.cars-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+h1 {
+  padding-bottom: 70px;
+}
+h1 span {
+  color: red;
+}
+
+.cars {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .cars {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .card {
+    margin-top: 5px;
+  }
+}
+
+img {
+  width: 300px;
+}
+
+h3 {
+  text-align: center;
+}
+@media (max-width: 800px) {
+  h3 {
+    margin-top: 20px;
+  }
+}
+
+.r-3 {
+  margin-top: -22px;
+}
+
+.explore {
+  width: 50%;
+  margin-left: 80px;
+  background-color: black;
+  margin-top: 40px;
+}
+.explore:hover {
+  background-color: rgb(0, 180, 180);
+}
+
+/* cars area end */
+/* exterior start */
+.exterior {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), black), url(images/exterior-4.jpg);
+}
+
+p {
+  font-size: 17px;
+}
+@media (max-width: 800px) {
+  p {
+    font-size: 15px;
+  }
+}
+
+/* exterior end */
+/* footer start */
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: black;
+  padding: 50px;
+}
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.img-logo {
+  width: 100px;
+  height: 110px;
+  mix-blend-mode: unset;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 800px) {
+  .footer-links {
+    align-items: center;
+  }
+}
+
+h2 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* footer end *//*# sourceMappingURL=style.css.map */
